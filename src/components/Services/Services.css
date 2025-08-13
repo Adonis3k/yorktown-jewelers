@@ -1,0 +1,106 @@
+.svc {
+  --charcoal: #0c0c0c;
+  --overlay: rgba(0,0,0,.45);
+  --overlay-strong: rgba(0,0,0,.6);
+  background: var(--charcoal);
+  color: #fff;
+  width: 100%;
+  display: grid;
+  gap: 8px; /* thin gutters like TR */
+  padding: clamp(1rem, 3vw, 2rem);
+  /* 12-column feel with named areas */
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 220px;
+}
+
+/* Left text block spans 2 rows */
+.svc-text {
+  position: relative;
+  background: #111;             /* light contrast vs images */
+  padding: clamp(1.25rem, 3vw, 2.25rem);
+  grid-column: 1 / span 6;      /* half width */
+  grid-row: 1 / span 2;         /* two rows tall */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.svc-watermark {
+  position: absolute;
+  top: .4rem;
+  left: clamp(1rem, 3vw, 2rem);
+  font-size: clamp(3rem, 12vw, 8rem);
+  opacity: .12;
+  font-family: "Pinyon Script";
+  margin: 0;
+  line-height: .9;
+  pointer-events: none;
+}
+.svc-kicker {
+  font-family: 'Marcellus', serif;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0 0 .75rem;
+  font-size: clamp(1.25rem, 2.8vw, 2rem);
+}
+
+.svc p { margin: 0 0 .9rem; color: #e6e6e6; }
+
+/* Generic image tile */
+.svc-tile {
+  position: relative;
+  overflow: hidden;
+}
+.svc-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.02);
+  transition: transform .5s ease;
+}
+.svc-tile:hover img { transform: scale(1.07); }
+
+/* Dark overlay + caption */
+.svc-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, var(--overlay-strong) 100%);
+  display: flex;
+  align-items: end;
+  padding: 14px;
+}
+.svc-overlay h3 {
+  font-family: Georgia, "Times New Roman", serif; /* italic serif like reference */
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  margin: 0;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+/* Placement to mimic the screenshot */
+.svc-t1 { grid-column: 7 / span 4; grid-row: 1 / span 1; }
+.svc-t2 { grid-column: 11 / span 4; grid-row: 1 / span 1; }
+.svc-t3 { grid-column: 1 / span 4;  grid-row: 3 / span 1; }
+.svc-t4 { grid-column: 5 / span 4;  grid-row: 3 / span 1; }
+.svc-t5 { grid-column: 9 / span 4;  grid-row: 3 / span 1; }
+
+/* Make it responsive */
+@media (max-width: 1024px) {
+  .svc { grid-auto-rows: 200px; }
+  .svc-text { grid-column: 1 / span 12; grid-row: auto / span 1; }
+  .svc-t1 { grid-column: 1 / span 7; }
+  .svc-t2 { grid-column: 8 / span 5; }
+  .svc-t3, .svc-t4, .svc-t5 { grid-column: span 4; }
+}
+
+@media (max-width: 760px) {
+  .svc {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 220px;
+  }
+  .svc-text,
+  .svc-t1, .svc-t2, .svc-t3, .svc-t4, .svc-t5 {
+    grid-column: 1 / -1;
+  }
+}

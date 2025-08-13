@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Marcellus";
+  src: url("/fonts/Marcellus/Marcellus-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.about-container {
+  background: rgba(240, 241, 244, 1);
+  display: flex;
+  align-items: center;
+  padding: 1%;
+  min-height: 100vh;
+}
+
+.about-image-container {
+  width: 50%;
+  padding: 5%;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.about-text-box {
+  width: 50%;
+  padding: 5%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+
+.about-text {
+  font-family: 'Marcellus', serif;
+  color: #000000;
+  text-align: left;
+  line-height: 1;
+}
+
+.script-text2008 {
+  font-family: "Pinyon Script", cursive !important;
+  color: #585858 !important;
+  font-size: clamp(5vw, 6vw, 6rem) !important;
+  text-shadow: 1px 1px 0px #ffffff !important;
+}
+
+
+
