@@ -5,6 +5,12 @@
   background: var(--charcoal);
   color: #fff;
   width: 100%;
+  padding: clamp(1rem, 3vw, 2rem);
+  box-sizing: border-box;
+  max-width: 100%;
+  width: min(1200px,100%);
+  margin-inline:auto;
+  padding:clamp (1rem,3vw,2rem);
   display: grid;
   gap: 8px; /* thin gutters like TR */
   padding: clamp(1rem, 3vw, 2rem);
@@ -25,17 +31,20 @@
   justify-content: center;
 }
 
-.svc-watermark {
-  position: absolute;
-  top: .4rem;
-  left: clamp(1rem, 3vw, 2rem);
-  font-size: clamp(3rem, 12vw, 8rem);
-  opacity: .12;
-  font-family: "Pinyon Script";
-  margin: 0;
-  line-height: .9;
-  pointer-events: none;
+.svc-text .svc-watermark {
+  position: absolute !important;
+  top: 0.4rem !important;
+  left: clamp(1rem, 3vw, 2rem) !important;
+  font-size: clamp(5rem, 4vw, 10rem) !important;
+  opacity: 0.3 !important;
+  font-family: "Pinyon Script", cursive !important;
+  margin: 0 !important;
+  line-height: 0.9 !important;
+  color: #fff !important;
+  pointer-events: none !important;
+  z-index: 1 !important;
 }
+
 .svc-kicker {
   font-family: 'Marcellus', serif;
   font-weight: 700;
@@ -44,7 +53,12 @@
   font-size: clamp(1.25rem, 2.8vw, 2rem);
 }
 
-.svc p { margin: 0 0 .9rem; color: #e6e6e6; }
+.svc p { 
+  font-family: 'Marcellus', serif;
+  font-size: 1.3rem;
+  margin: 0 0 .9rem; 
+  color: #e6e6e6; 
+}
 
 /* Generic image tile */
 .svc-tile {
@@ -78,20 +92,20 @@
   text-shadow: 0 1px 2px rgba(0,0,0,.6);
 }
 
-/* Placement to mimic the screenshot */
-.svc-t1 { grid-column: 7 / span 4; grid-row: 1 / span 1; }
-.svc-t2 { grid-column: 11 / span 4; grid-row: 1 / span 1; }
-.svc-t3 { grid-column: 1 / span 4;  grid-row: 3 / span 1; }
-.svc-t4 { grid-column: 5 / span 4;  grid-row: 3 / span 1; }
-.svc-t5 { grid-column: 9 / span 4;  grid-row: 3 / span 1; }
+/* Placement for new layout 7 / span 6; grid-row: 1 / span 2; */
+.svc-t1 { grid-column: 7 / span 6; grid-row: 1 / span 2; } /* Yorktownringcleaning - top right, spans 2 rows, reduced by ~15% */
+.svc-t2 { grid-column: 1 / span 6; grid-row: 3 / span 1; } /* Watch repair - bottom left */
+.svc-t3 { grid-column: 7 / span 6; grid-row: 3 / span 1; } /* Jewelry repair - bottom right */
+.svc-t4 { grid-column: 1 / span 12; grid-row: 4 / span 1; } /* Services Showroom - full width third row */
 
 /* Make it responsive */
 @media (max-width: 1024px) {
   .svc { grid-auto-rows: 200px; }
   .svc-text { grid-column: 1 / span 12; grid-row: auto / span 1; }
-  .svc-t1 { grid-column: 1 / span 7; }
-  .svc-t2 { grid-column: 8 / span 5; }
-  .svc-t3, .svc-t4, .svc-t5 { grid-column: span 4; }
+  .svc-t1 { grid-column: 1 / span 12; grid-row: auto; }
+  .svc-t2 { grid-column: 1 / span 6; grid-row: auto; }
+  .svc-t3 { grid-column: 7 / span 6; grid-row: auto; }
+  .svc-t4 { grid-column: 1 / span 12; grid-row: auto; }
 }
 
 @media (max-width: 760px) {
@@ -100,7 +114,7 @@
     grid-auto-rows: 220px;
   }
   .svc-text,
-  .svc-t1, .svc-t2, .svc-t3, .svc-t4, .svc-t5 {
+  .svc-t1, .svc-t2, .svc-t3, .svc-t4 {
     grid-column: 1 / -1;
   }
 }

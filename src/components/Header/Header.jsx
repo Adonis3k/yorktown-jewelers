@@ -22,9 +22,10 @@ class Header extends Component {
           <ul>
              <li>
               <Link
-                to="home -section"
+                to="home-section"
                 smooth={true}
                 duration={1000}
+                offset={-36}
               >
                 Home
               </Link>
@@ -34,6 +35,7 @@ class Header extends Component {
                 to="about-section"
                 smooth={true}
                 duration={1000}
+                offset={-65}
               >
                 About
               </Link>
@@ -43,35 +45,37 @@ class Header extends Component {
                 to="services-section"
                 smooth={true}
                 duration={1000}
+                offset={-65}
               >
                 Services
               </Link>
-            </li>        <li>
+            </li>
+            <li>
               <Link
-                to="Social-section"
+                to="social-section"
                 smooth={true}
                 duration={1000}
-                
+                offset={-65}
               >
                 Social
               </Link>
             </li>
             <li>
               <Link
-                to="Reviews-section"
+                to="reviews-section"
                 smooth={true}
                 duration={1000}
-                
+                offset={-36}
               >
                 Reviews
               </Link>
             </li>
             <li>
               <Link
-                to="Contact"
+                to="contact-section"
                 smooth={true}
                 duration={1000}
-               
+                offset={-36}
               >
                 Contact
               </Link>

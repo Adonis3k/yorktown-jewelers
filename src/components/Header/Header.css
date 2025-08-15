@@ -18,16 +18,18 @@
 .navitems ul {
     position: fixed;
     width: 100%;
+    left: 0;
     top: 0;
     z-index: 1000;
     height: 4.5rem;
     display: flex;
     list-style-type: none;
     justify-content: flex-end;
-    background-size: cover;
+    background: #0c0c0c;
     color: #ffffff;
     text-decoration: none;
     font-family: 'Marcellus', serif;
+    font-size: 1.3rem;
     margin: 0;
     padding: 0;
     opacity: 95%;
@@ -37,6 +39,11 @@
     padding-top: 1.75rem;
     padding-right: 2rem;
     margin: 0 1.5rem;
+}
+
+.navitems a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .navitems a:hover, .navitems li a:hover {

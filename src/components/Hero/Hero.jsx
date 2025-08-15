@@ -35,7 +35,7 @@ const Hero = () => {
 
   try {
     return (
-      <div className='hero-container'>
+      <div id='home-section' className='hero-container'>
         <div className='hero-content'>
           <div className='hero-text'>
             <span className='large-letter'>Y</span>orktown{' '}

@@ -1,0 +1,127 @@
+/* Reviews.css */
+@font-face {
+  font-family: "Marcellus";
+  src: url("/fonts/Marcellus/Marcellus-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root{
+  --bg: #fafafa;
+  --card-bg: #fff;
+  --text: #1a1a1a;
+  --muted: #555;
+  --accent: #ffffff; /* “jewelry gold” */
+  --shadow: 0 6px 18px rgba(0,0,0,.08);
+  --radius: 12px;
+  --gap: 20px;
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg: #0f1115;
+    --card-bg: #17181b;
+    --text: #e8eaed;
+    --muted: #a5adba;
+    --shadow: 0 8px 24px rgba(0,0,0,.45);
+  }
+}
+
+.reviews{
+  padding: clamp(32px, 4vw, 64px) 20px;
+  background: #0c0c0c;
+  color: #fff;
+  text-align: center;
+}
+
+.reviews h2{
+  font-family: 'Marcellus', serif;
+  font-size: clamp(1.25rem, 2.5vw, 1.9rem);
+  letter-spacing: .2px;
+  margin: 0 0 28px;
+}
+
+.review-slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.review-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.review-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--gap);
+  align-items: stretch;
+}
+
+.review-card{
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 22px;
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  text-align: left;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.review-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(252, 252, 252, 0.12);
+}
+
+.review-text{
+  font-family: 'Marcellus', serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  line-height: 1.55;
+  color: var(--text);
+  margin: 0 0 12px;
+}
+
+/* If you want to cap card height & trim long text, uncomment:
+.review-text{
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+*/
+
+.review-rating{
+  font-size: 1.1rem;
+  color: var(--accent); /* makes ⭐ gold */
+  line-height: 1;
+  margin: 0 0 6px;
+}
+
+.review-name{
+  font-family: 'Marcellus', serif;
+  font-weight: 600;
+  color: var(--muted);
+  margin: 0;
+}
+
+.view-all{
+  font-family: 'Marcellus', serif;
+  display: inline-block;
+  margin-top: 26px;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color .18s ease;
+}
+.view-all:hover{ border-color: var(--accent); }
+
+@media (prefers-reduced-motion: reduce){
+  .review-card,
+  .view-all{ transition: none; }
+}

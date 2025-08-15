@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Marcellus";
+  src: url("/fonts/Marcellus/Marcellus-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.ig-gallery {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px;
+}
+.instagram-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  font-family: 'Marcellus', serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: white;
+  margin: 0 0 10px 0;
+}
+
+.instagram-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.instagram-icon {
+  width: 1.5em;
+  height: 1.5em;
+  fill: white;
+}
+
+.ig-gallery a {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+}
+
+.ig-gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.ig-gallery::-webkit-scrollbar {
+  display: none; /* hide scrollbar for clean look */
+}
+
+.ig-gallery * {
+  font-family: 'Marcellus', serif;
+}
