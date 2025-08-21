@@ -32,20 +32,24 @@ const year = new Date().getFullYear();
           <h4 className="ft__title">Get in touch</h4>
           <ul className="ft__list">
             <li>p: <a href="tel:+914-245-1023">914‑245‑1023</a></li>
-            <li>e: <a href="mailto:yorktownjewelers@yahoo.com">yorktownjewelers@yahoo.com</a></li>
+           <li>e: <a href="mailto:yorktownjewelers@yahoo.com" 
+           className="email-link">yorktownjewelers@yahoo.com</a></li>
             <li>
               <a
                 href="https://maps.app.goo.gl/gZ3NQUBGCpHNZLSF8"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                322 Kear Street<br/>Yorktown, NY 10598
+                322 Kear Street<br/>Yorktown, NY 10598<br />
               </a>
             </li>
-            <li><div className='Footer-container'>
-        Store Hours: Monday - Friday 10am-6pm 
-        Saturday 10am -5pm
-      </div></li>
+            <li>
+  <strong>Store Hours:</strong><br />
+  Monday–Friday 10am – 6pm<br />
+  Saturday 10am – 5pm
+</li>
+
+
           </ul>
         </div>
 

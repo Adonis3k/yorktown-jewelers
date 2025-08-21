@@ -89,7 +89,7 @@ display: flex;
     width: 120%;
     height:28rem;
     display: flex;
-    justify-content: center;
+  padding-left: 8rem;
   }
 }
 
@@ -204,18 +204,17 @@ transform: scale(1.4);
  .hero-text {
    width: 50%;
    margin-top: 10rem;
-   margin-left: -10rem;
+   margin-left: -8rem;
    order: 1;
    font-size: 6rem;
  }
-
 .hero-image-container {
    order: 2;
-   margin-top: 1rem;
-   margin-left: 26rem;
-   width: 100%;
-   
+   margin-top: 1px;
+   width: 18rem;
+   margin-left: 29.5rem;
  }
+
   .hero-image {
    width: 100%;
    height: auto;
@@ -235,17 +234,18 @@ transform: scale(1.4);
    margin-top: 8rem;
    order: 1;
    font-size: 5rem;
+   padding-right: 7rem;
  }
 
 .hero-image-container {
    order: 2;
    margin-top: 1px;
-   width: 100%;
-   padding-right: 2rem;
+   width: 15rem;
+   margin-left: 27.5rem;
  }
   .hero-image {
-   width: 100%;
-   height: auto;
+
+
    object-fit: contain;
    padding-bottom: 1rem;
  }
