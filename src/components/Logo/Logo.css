@@ -19,31 +19,31 @@
 
 @media (min-width: 768px) {
   .logoHeader-container .logo-img {
-    transform: scale(1.3);
+    transform: scale(2);
   }
 }
 
 @media (min-width: 820px) {
   .logoHeader-container .logo-img {
-    transform: scale(1.5);
+    transform: scale(2.5);
   }
 }
 
 @media (min-width: 950px) {
   .logoHeader-container .logo-img {
-    transform: scale(1.7);
+    transform: scale(2.75);
   }
 }
 
 @media (min-width: 1024px) {
   .logoHeader-container .logo-img {
-    transform: scale(1.9);
+    transform: scale(1);
   }
 }
 
 @media (min-width: 1440px) {
   .logoHeader-container .logo-img {
-    transform: scale(2.1);
+    transform: scale(1.25);
   }
 }
 

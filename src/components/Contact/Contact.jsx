@@ -32,8 +32,8 @@ const year = new Date().getFullYear();
           <h4 className="ft__title">Get in touch</h4>
           <ul className="ft__list">
             <li>p: <a href="tel:+914-245-1023">914‑245‑1023</a></li>
-           <li>e: <a href="mailto:yorktownjewelers@yahoo.com" 
-           className="email-link">yorktownjewelers@yahoo.com</a></li>
+           <li> <a href="mailto:yorktownjewelers@yahoo.com" 
+           className="email-link">e: yorktownjewelers@yahoo.com</a></li>
             <li>
               <a
                 href="https://maps.app.goo.gl/gZ3NQUBGCpHNZLSF8"
@@ -43,16 +43,13 @@ const year = new Date().getFullYear();
                 322 Kear Street<br/>Yorktown, NY 10598<br />
               </a>
             </li>
-            <li>
-  <strong>Store Hours:</strong><br />
-  Monday–Friday 10am – 6pm<br />
-  Saturday 10am – 5pm
-</li>
+            <li><strong>Store Hours:</strong><br />
+            Monday–Friday 10am – 6pm<br />
+           <li class="hours">Saturday 10am – 5pm</li>
 
-
+            </li>
           </ul>
         </div>
-
         {/* Social & legal */}
         <div className="ft__col">
           <h4 className="ft__title">Connect with us</h4>
