@@ -6,7 +6,9 @@
   font-style: normal;
   font-display: swap;
 }
-
+.review-heading {
+  font-size: 3rem; 
+}
 :root{
   --bg: #fafafa;
   --card-bg: #fff;
@@ -28,11 +30,17 @@
   }
 }
 
+
+
+
+
+
 .reviews{
   padding: clamp(32px, 4vw, 64px) 20px;
   background: #0c0c0c;
   color: #fff;
   text-align: center;
+
 }
 
 .reviews h2{
@@ -60,6 +68,128 @@
   gap: var(--gap);
   align-items: stretch;
 }
+
+@media (max-width: 390px) {
+  .review-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .review-card {
+    max-width: 320px;
+    padding: 15px;
+  }
+  .review-heading {
+    font-size: 2rem;
+    margin-left: -35rem;
+    padding-bottom: 2rem;
+  }
+}
+
+
+@media (min-width: 428px)  {
+  .review-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .review-card {
+    padding: 15px;
+    max-width: 350px;
+  }
+  .review-heading {
+    font-size: 2.5rem; 
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 30rem;
+  display: inline-block;
+}
+}
+@media (min-width: 768px)  {
+  .review-grid {
+    grid-template-columns: 1f;
+    gap: 20px;
+  }
+  .review-card {
+    padding: 15px;
+    max-width: 690px;
+  }
+  .review-heading {
+  font-size: 4rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 14rem;
+  display: inline-block;
+}
+}
+
+@media (min-width: 820px) {
+  .review-grid {
+    gap: 24px;
+    max-width: 780px;
+  }
+  .review-card {
+  padding: 15px;
+  max-width: 100%;
+}
+.review-heading {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 13rem;
+  display: inline-block;
+}
+}
+@media (min-width: 950px) {
+  .review-grid {
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: -.3rem;
+    gap: 10px;
+    max-width: 920px;
+  }
+  .review-card {
+  padding: 15px;
+  padding-top: 3rem;
+  max-width: 100%;
+}
+.review-heading {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 8rem;
+  display: inline-block;
+}
+
+}
+
+@media (min-width: 1024px) {
+  .review-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 24px;
+    max-width: 970px;
+  }
+  .review-card {
+  padding: 15px;
+  max-width: 100%;
+}
+}
+
+@media (min-width: 1440px) {
+  .review-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 24px;
+    max-width: 1950px;
+  }
+  .review-card {
+  padding: 15px;
+  max-width: 100%;
+}}
+
+
 
 .review-card{
   background: var(--card-bg);

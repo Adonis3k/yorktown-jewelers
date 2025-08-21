@@ -1,6 +1,7 @@
-// src/components/Contact/Contact.jsx
-import "./Contact.css";
-// import Logo from "../../assets/logo-light.svg"; // swap to your light/white logo
+import { Link } from 'react-scroll';
+import './Contact.css';
+import logo from '../Logo/Logo.png';
+
 
 
 const Contact = () => {
@@ -9,21 +10,20 @@ const year = new Date().getFullYear();
   return (
     <footer id="contact-section" className="ft">
       <div className="ft__inner">
-        {/* Brand / Logo */}
-        {/* <div className="ft__brand">
-          <img src={Logo} alt="Yorktown Jewelers" className="ft__logo" />
-        </div> */}
-
-        {/* Explore */}
+<div className="logoContact-container">
+      <a href="#home">
+        <img src={logo} alt="Yorktown Jewelers Logo" className="logo-img" />
+      </a>
+    </div>
         <nav className="ft__col" aria-label="Footer navigation">
           <h4 className="ft__title">Explore</h4>
           <ul className="ft__list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#Social">Social</a></li>
-            <li><a href="#Reviews">Reviews</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><Link to="home-section" smooth={true} duration={1000} offset={-36}>Home</Link></li>
+            <li><Link to="about-section" smooth={true} duration={1000} offset={-75}>About</Link></li>
+            <li><Link to="services-section" smooth={true} duration={1000} offset={-70}>Services</Link></li>
+            <li><Link to="social-section" smooth={true} duration={1000} offset={-75}>Social</Link></li>
+            <li><Link to="reviews-section" smooth={true} duration={1000} offset={-36}>Reviews</Link></li>
+            <li><Link to="contact-section" smooth={true} duration={1000} offset={-36}>Contact</Link></li>
           </ul>
         </nav>
 
@@ -42,6 +42,10 @@ const year = new Date().getFullYear();
                 322 Kear Street<br/>Yorktown, NY 10598
               </a>
             </li>
+            <li><div className='Footer-container'>
+        Store Hours: Monday - Friday 10am-6pm 
+        Saturday 10am -5pm
+      </div></li>
           </ul>
         </div>
 

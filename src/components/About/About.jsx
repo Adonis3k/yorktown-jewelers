@@ -1,4 +1,3 @@
-
 import './About.css';
 import DiamondNecklace from '../../assets/diamond necklace.jpg';
 
@@ -6,6 +5,7 @@ const About = () => {
   try{
     return (
      <div id='about-section' className='about-container'>
+      <span className='about-script'>About</span>
       <div className='about-image-container'>
         <img src={DiamondNecklace} alt="Diamond Necklace" className="about-image" />
       </div>
@@ -19,14 +19,14 @@ const About = () => {
           customer service and meeting the needs of every special occasion, from engagements 
           to celebrations. 
           <br /><br />
-          A true family business, Yorktown Jewelers now includes the founder’s son, Michael, who joined in 2019. 
+          A true family business, Yorktown Jewelers now includes the founder's son, Michael, who joined in 2019. 
           Their store features a wide variety of jewelry, perfect for anyone looking for a meaningful gift.
         </div>
       </div>
      </div>
     );
   } catch (error) {
-    console.error("Error rendering Hero component:", error);
+    console.error("Error rendering About component:", error);
     return <div className="error">Something went wrong. Please try again later.</div>;
   }
 };

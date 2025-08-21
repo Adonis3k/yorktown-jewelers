@@ -1,4 +1,12 @@
-/* src/components/Contact/Contact.css */
+
+
+.logoContact-container {
+      position: relative;
+  top: 0.5rem;
+  left: -2rem;
+  z-index: 9999;
+  text-align: left;
+}
 .ft {
   background: #0c0c0c;
   color: #e9e9e9;
@@ -11,7 +19,7 @@
   width: min(1200px, 92vw);
   margin-inline: auto;
   display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr 1fr; /* logo + 3 cols */
+  grid-template-columns: .5fr 1fr 1fr 1fr; /* logo + 3 cols */
   gap: clamp(20px, 4vw, 48px);
   align-items: start;
 }
@@ -105,9 +113,12 @@
   width: 40px;
   height: 40px;
   border-radius: 8px;
-  border: 1px solid #2a2a2a;
-  background: #151515;
-  color: #fafafa;
+  background: #8d8d8d;
+  color: #2e2d2d;
+  display: flex;              /* centers the icon */
+  align-items: center;        /* vertical center */
+  justify-content: center;    /* horizontal center */
+  font-size: 18px;
   cursor: pointer;
   transition: transform .15s ease, background .15s ease, border-color .15s ease;
   z-index: 20;

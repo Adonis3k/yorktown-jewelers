@@ -1,0 +1,31 @@
+.logoHeader-container{
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  z-index: 9999;
+  text-align: left;
+}
+
+.logo-container a {
+  display: inline-block;
+}
+
+.logo-img {
+  height: 200px;         
+  width: auto;
+  display: block;
+}
+
+@media (min-width: 960px) {
+ 
+  }
+
+/* Smaller logo on mobile */
+@media (max-width: 600px) {
+  .logo-img {
+    height: 120px;
+  }
+}
+@media (max-width: 1024px) {
+  .logo-img{padding-top: 3rem;
+}}

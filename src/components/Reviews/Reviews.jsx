@@ -45,7 +45,7 @@ function Reviews() {
         rel="noopener noreferrer"
         className="view-all"
       >
-<h1>⭐⭐⭐⭐⭐ Google Reviews ⭐⭐⭐⭐⭐</h1>
+<h1 class="review-heading">⭐ Google Reviews ⭐</h1>
       </a>
       <div className="review-grid">
         {reviews.map((review, idx) => (
