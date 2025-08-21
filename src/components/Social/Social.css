@@ -5,14 +5,19 @@
   font-style: normal;
   font-display: swap;
 }
+#root {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .social-section {
-  width: 100vw;
-  margin-left: .5rem;
+  width: 100%;
+  margin: 0 auto;        /* remove the right-lean: was margin-left:.5rem */
   box-sizing: border-box;
   padding: 2rem 1rem;
   background: #0c0c0c;
-  overflow-x: hidden;
-
+  overflow-x: hidden;    /* prevents any horizontal spill */
+  max-width: 100%;
 }
 
 .ig-gallery {
@@ -21,7 +26,7 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  padding: 10px;
+  padding: 10px 0;
 }
 .instagram-text {
   display: flex;

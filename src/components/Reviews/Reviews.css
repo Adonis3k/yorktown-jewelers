@@ -18,6 +18,10 @@
   --shadow: 0 6px 18px rgba(0,0,0,.08);
   --radius: 12px;
   --gap: 20px;
+  max-width: 100%;
+  overflow-x: hidden;
+
+
 }
 
 @media (prefers-color-scheme: dark){
@@ -30,17 +34,12 @@
   }
 }
 
-
-
-
-
-
 .reviews{
   padding: clamp(32px, 4vw, 64px) 20px;
   background: #0c0c0c;
   color: #fff;
   text-align: center;
-
+  overflow-y: hidden;
 }
 
 .reviews h2{
@@ -70,18 +69,25 @@
 }
 
 @media (max-width: 390px) {
-  .review-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
+.review-grid {
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  
+}
+
   .review-card {
-    max-width: 320px;
-    padding: 15px;
+    width:auto;
+    max-width:auto;
+    
   }
   .review-heading {
     font-size: 2rem;
-    margin-left: -35rem;
     padding-bottom: 2rem;
+    
+
+
+
   }
 }
 
@@ -89,19 +95,18 @@
 @media (min-width: 428px)  {
   .review-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+   
+    
   }
   .review-card {
     padding: 15px;
     max-width: 350px;
+    
   }
   .review-heading {
-    font-size: 2.5rem; 
+    font-size: 2.4rem; 
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 30rem;
-  display: inline-block;
+  
 }
 }
 @media (min-width: 768px)  {
@@ -118,7 +123,7 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 14rem;
+
   display: inline-block;
 }
 }
@@ -136,14 +141,13 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 13rem;
   display: inline-block;
 }
 }
 @media (min-width: 950px) {
   .review-grid {
     grid-template-columns: repeat(3, 1fr);
-    margin-left: -.3rem;
+ 
     gap: 10px;
     max-width: 920px;
   }
@@ -156,7 +160,6 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 8rem;
   display: inline-block;
 }
 

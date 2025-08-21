@@ -184,7 +184,7 @@
   .svc {        
    max-width: 1420px;   /* card width */
     width: auto;         /* no forced 100vw */
-    margin-left: -60px;      /* align left */
+    margin-left: .75rem;      /* align left */
     margin-right: -60px;  /* prevent centering */
     padding-top:2rem;  /* card inner padding */
     border-radius: 16px;
