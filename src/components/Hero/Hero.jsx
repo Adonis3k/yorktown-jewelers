@@ -2,26 +2,20 @@ import { useState, useEffect } from 'react';
 import './Hero.css';
 
 // Import all images from your assets folder
-import SapphireRing from '../../assets/SapphireRing.jpg';
-import RolexInbox from '../../assets/Rolexinbox.jpg';
-import EmeraldRing from '../../assets/EmeraldRing.png';
-import DiamondNecklace from '../../assets/diamond necklace.jpg';
-import GoldChains from '../../assets/GoldChains.jpg';
-import Bracelets from '../../assets/Bracelets.jpg';
-import DiamondRing1 from '../../assets/DiamondRing1.jpg';
-import DiamondRing from '../../assets/DiamondRing.jpg';
+import Weddingbands from '../../assets/Weddingbands.png';
+import ring from '../../assets/ring.png';
+import ring2 from '../../assets/ring2.png';
+import ring3 from '../../assets/ring3.png';
+import ring1 from '../../assets/ring1.png';
 
 const Hero = () => {
   // Add the images you want in the carousel
   const images = [
-    SapphireRing,
-    RolexInbox,
-    EmeraldRing,
-    DiamondNecklace,
-    GoldChains,
-    Bracelets,
-    DiamondRing1,
-    DiamondRing
+    Weddingbands,
+    ring,
+    ring2,
+    ring3,
+    ring1,
   ];
 
   const [currentImage, setCurrentImage] = useState(0);

@@ -127,6 +127,44 @@ transform: scale(1.4);
     padding-right: 16rem;
   }
 }
+
+@media (max-width: 926px) {
+  .hero-content {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 6rem;
+    padding-bottom: 8rem;
+    padding-top:4rem;
+  }
+   .hero-text {
+    flex: 1;
+font-size: 6rem;
+gap:10rem;
+padding-left: 1rem;
+margin: 0;
+}
+  .hero-image-container {
+    flex:  0 63%;
+    padding-right: 0;
+    padding-left: 1.5rem;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+transform: scale(1.4);
+  }
+  .hero-image {
+
+    height:21rem;
+    object-fit:contain;
+    padding-right: 16rem;
+  }
+}
+
+
+
 @media (max-width: 820px) {
   .hero-content {
     display: flex;

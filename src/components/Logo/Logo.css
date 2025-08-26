@@ -23,9 +23,29 @@
   }
 }
 
+
+
 @media (min-width: 820px) {
   .logoHeader-container .logo-img {
     transform: scale(2.5);
+  }
+}
+
+@media (min-width: 844px) {
+  .logoHeader-container .logo-img {
+    transform: scale(1.4);
+  }
+}
+
+
+@media (min-width: 926px) {
+  .logoHeader-container .logo-img {
+    transform: scale(1.4);
+  }
+}
+@media (min-width: 949px) {
+  .logoHeader-container .logo-img {
+    transform: scale(1.75);
   }
 }
 
@@ -35,15 +55,34 @@
   }
 }
 
+
+@media (min-width: 1023px) {
+  .logoHeader-container .logo-img {
+    transform: scale(1.1);
+  }
+}
+
 @media (min-width: 1024px) {
   .logoHeader-container .logo-img {
     transform: scale(1);
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1500px) {
   .logoHeader-container .logo-img {
-    transform: scale(1.25);
+    transform: scale(1);
   }
 }
 
+@media (min-width: 1445px) {
+  .logoHeader-container .logo-img {
+    transform: scale(.5);
+  }
+}
+
+
+@media (min-width: 1940px) {
+  .logoHeader-container .logo-img {
+    transform: scale(1);
+  }
+}
