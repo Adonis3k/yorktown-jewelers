@@ -20,7 +20,7 @@ export default function Services() {
         <p>
           Full‑service jeweler & designer of engagement rings, diamonds, platinum, white gold, silver
           and vintage. Services include jewelry repairs, custom designs, appraisals, silver restoration,
-          and complete watch repair & restoration.
+          and complete watch repair & restoration. We also buy gold , diamonds and fine quailty watches .
         </p>
       </div>
 
