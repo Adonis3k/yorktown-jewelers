@@ -55,7 +55,7 @@ const year = new Date().getFullYear();
           <h4 className="ft__title">Connect with us</h4>
           <div className="ft__social">
             <a
-              href="https://www.facebook.com/profile.php?id=100063957397079/"
+              href="https://www.facebook.com/profile.php?id=100063957397079"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
