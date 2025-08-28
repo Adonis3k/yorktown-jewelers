@@ -2,7 +2,7 @@ import "./Services.css";
 
 import Watchrepair1 from "../../assets/Watchrepair1.jpg";
 import Jewelryrepair2 from "../../assets/Jewelryrepair2.webp";
-import ServicesShowroom from "../../assets/ServicesShowroom.jpg";
+// import ServicesShowroom from "../../assets/ServicesShowroom.jpg";
 import Yorktownringcleaning from "../../assets/Yorktownringcleaning.jpg";
 
 
@@ -18,8 +18,9 @@ export default function Services() {
           business. We offer a distinctive selection of beautifully crafted jewelry and expert services.
         </p>
         <p>
-          Full‑service jeweler & designer of engagement rings, diamonds, platinum, white gold, silver
-          and vintage. Services include jewelry repairs, custom designs, appraisals, silver restoration,
+          Full‑service jeweler & designer of engagement rings, diamonds, platinum, gold jewelry.
+        </p> 
+        <p> Services include jewelry repairs, custom designs, appraisals, vintage jewelry restoration,
           and complete watch repair & restoration. We also buy gold , diamonds and fine quailty watches .
         </p>
       </div>
@@ -42,10 +43,10 @@ export default function Services() {
       </article>
 
       {/* Third row spanning full width */}
-      <article className="svc-tile svc-t4">
-        <img src={ServicesShowroom} alt="Services Showroom" />
-        <div className="svc-overlay"><h3>Services Showroom</h3></div>
-      </article>
+      {/* <article className="svc-tile svc-t4"> */}
+        {/* <img src={ServicesShowroom} alt="Services Showroom" /> */}
+        {/* <div className="svc-overlay"><h3>Services Showroom</h3></div> */}
+      {/* </article> */}
     </section>
   );
 }

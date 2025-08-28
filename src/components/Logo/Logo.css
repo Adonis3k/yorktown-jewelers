@@ -1,88 +1,111 @@
-.logoHeader-container{
-  position: absolute;
-  top: 0.5rem;
-  left: 1rem;
-  z-index: 9999;
-  text-align: left;
+.logoHeader-container {
+    position: absolute; /* [1] */
+    top: 0.5rem; /* [1] */
+    left: 1rem; /* [1] */
+    z-index: 9999; /* [1] */
+    text-align: left; /* [1] */
 }
 
 .logoHeader-container a {
-  display: inline-block;
+    display: inline-block; /* [1] */
 }
 
 .logo-img {
-  height: auto;
-  width: 200px;
-  padding-top: 3rem;
-  transform-origin: top left;
-}
-
-@media (min-width: 768px) {
-  .logoHeader-container .logo-img {
-    transform: scale(2);
-  }
-}
-
-
-
-@media (min-width: 820px) {
-  .logoHeader-container .logo-img {
-    transform: scale(2.5);
-  }
-}
-
-@media (min-width: 844px) {
-  .logoHeader-container .logo-img {
-    transform: scale(1.4);
-  }
-}
-
-
-@media (min-width: 926px) {
-  .logoHeader-container .logo-img {
-    transform: scale(1.4);
-  }
-}
-@media (min-width: 949px) {
-  .logoHeader-container .logo-img {
-    transform: scale(1.75);
-  }
-}
-
-@media (min-width: 950px) {
-  .logoHeader-container .logo-img {
-    transform: scale(2.75);
-  }
-}
-
-
-@media (min-width: 1023px) {
-  .logoHeader-container .logo-img {
-    transform: scale(1.1);
-  }
-}
-
-@media (min-width: 1024px) {
-  .logoHeader-container .logo-img {
+    height: auto; /* [1] */
+    width: 200px; /* [1] */
+    padding-top: 3rem; /* [1] */
+    transform-origin: top left; /* [1] */
+    /*
+     * Default transform for the largest screens (1940px and above) [3].
+     * With max-width, we set the largest screen's style outside media queries.
+     */
     transform: scale(1);
-  }
 }
 
-@media (min-width: 1500px) {
-  .logoHeader-container .logo-img {
-    transform: scale(1);
-  }
+/*
+ * Adjust for screens with a maximum width of 1939px (i.e., from 1445px up to 1939px in the original logic).
+ * This corresponds to the `transform: scale(.5)` applied at `min-width: 1445px` in the original sources [3].
+ */
+@media (max-width: 1939px) {
+    .logoHeader-container .logo-img {
+        transform: scale(.75);
+    }
 }
 
-@media (min-width: 1445px) {
-  .logoHeader-container .logo-img {
-    transform: scale(.5);
-  }
+@media (max-width: 1441x) {
+    .logoHeader-container .logo-img {
+        transform: scale(.75);
+    }
+}
+
+/*
+ * Adjust for screens with a maximum width of 1444px (i.e., from 948px up to 1444px in the original logic).
+ * This reverts to `transform: scale(1)` which was applied from `min-width: 948px` [2].
+ */
+@media (max-width: 1444px) {
+    .logoHeader-container .logo-img {
+        transform: scale(.85) ;
+    }
 }
 
 
-@media (min-width: 1940px) {
-  .logoHeader-container .logo-img {
-    transform: scale(1);
-  }
+
+
+
+/*
+ * Adjust for screens with a maximum width of 947px (i.e., from 768px up to 947px in the original logic).
+ * This applies `transform: scale(2)` which was set at `min-width: 768px` [1].
+ */
+@media (max-width: 947px) {
+    .logoHeader-container .logo-img {
+        transform: scale(2);
+    }
+}
+
+@media (max-width: 932px) {
+    .logoHeader-container .logo-img {
+        transform: scale(1.1);
+    }
+}
+
+
+@media (max-width: 926px) {
+    .logoHeader-container .logo-img {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 844px) {
+    .logoHeader-container .logo-img {
+        transform: scale(1.1);
+    }
+}
+
+
+@media (max-width: 820px) {
+    .logoHeader-container .logo-img {
+        transform: scale(1.5);
+    }
+}
+
+
+/*
+ * Adjust for screens with a maximum width of 767px (i.e., from 300px up to 767px in the original logic).
+ * This applies `transform: scale(.7)` which was set at `min-width: 300px` [1].
+ */
+@media (max-width: 767px) {
+    .logoHeader-container .logo-img {
+        transform: scale(.7);
+    }
+}
+
+/*
+ * Adjust for screens with a maximum width of 299px (i.e., the smallest screens, below 300px).
+ * In the original `min-width` approach, there was no explicit `transform` for screens below 300px [1],
+ * meaning the default `width: 200px` without scaling would apply.
+ */
+@media (max-width: 299px) {
+    .logoHeader-container .logo-img {
+        transform: none; /* Removes any applied transform for the smallest screens */
+    }
 }

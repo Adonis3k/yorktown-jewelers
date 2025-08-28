@@ -1,5 +1,5 @@
 import './About.css';
-import DiamondNecklace from '../../assets/diamond necklace.jpg';
+import Rring from '../../assets/Rring.jpg';
 
 const About = () => {
   try{
@@ -7,7 +7,7 @@ const About = () => {
      <div id='about-section' className='about-container'>
       <span className='about-script'>About</span>
       <div className='about-image-container'>
-        <img src={DiamondNecklace} alt="Diamond Necklace" className="about-image" />
+        <img src={Rring} alt="Rring" className="about-image" />
       </div>
       <div className='about-text-box'>
         <span className='script-text2008'>Since 2008</span>  
